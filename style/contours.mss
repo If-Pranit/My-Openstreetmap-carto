@@ -37,7 +37,7 @@
   line-opacity: 0.9;
 }
 
-#contours400[zoom>=10][zoom<=114] {
+#contours400[zoom>=10][zoom<=14] {
   line-color: lighten(@contour, 10);
   line-smooth: @contours-line-smooth;
   line-width: @contours-line-width * @contours-minor-multiplier;
