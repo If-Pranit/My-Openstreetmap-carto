@@ -112,7 +112,7 @@
 }
 #contours50[zoom = 15] {
   line-color: lighten(@contour, @contours-minor-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier:
+  line-width: @contours-line-width * @contours-minor-multiplier;
   line-opacity: 0.9;
 }
 #contours10[zoom = 15] {
@@ -146,7 +146,7 @@
 }
 #contours50[zoom = 17] {
   line-color: lighten(@contour, @contours-minor-lighten);
-  line-width: @contours-line-width * @contours-medi;
+  line-width: @contours-line-width * @contours-medium-multiplier;
   line-opacity: 0.95;
 }
 #contours10[zoom = 17] {
@@ -163,7 +163,7 @@
 }
 #contours50[zoom = 18] {
   line-color: lighten(@contour, 5);
-  line-width: @contours-line-width * @contours-major-multiplier:
+  line-width: @contours-line-width * @contours-major-multiplier;
   line-opacity: 0.7;
 }
 #contours10[zoom = 18] {
@@ -180,7 +180,7 @@
 }
 #contours50[zoom = 19] {
   line-color: lighten(@contour, 0);
-  line-width: @contours-line-width * @contours-major-multiplier:
+  line-width: @contours-line-width * @contours-major-multiplier;
   line-opacity: 0.8;
 }
 #contours10[zoom = 19] {
