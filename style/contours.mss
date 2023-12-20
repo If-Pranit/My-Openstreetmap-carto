@@ -129,7 +129,7 @@
 }
 #contours50[zoom = 16] {
   line-color: lighten(@contour, @contours-minor-lighten);
-  line-width: @contours-line-width * @contours-medi;
+  line-width: @contours-line-width * @contours-medium-multiplier;;
   line-opacity: 0.8;
 }
 #contours10[zoom = 16] {
