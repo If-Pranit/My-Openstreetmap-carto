@@ -26,8 +26,8 @@ name: OpenStreetMap Carto
 description: A general-purpose OpenStreetMap mapnik style, in CartoCSS
 bounds: *world
 center:
-  - 0
-  - 0
+  - 78.9629
+  - 20.5937
   - 4
 format: png
 interactivity: false
@@ -145,242 +145,6 @@ Layer:
     properties:
       cache-features: true
       minzoom: 10
-  - id: contours25
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours25
-    properties:
-      minzoom: 18
-  - id: contours50
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours50
-    properties:
-      minzoom: 16
-  - id: contours100
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 100 = 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours100
-    properties:
-      minzoom: 14
-  - id: contours200
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 200 = 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours200
-    properties:
-      minzoom: 12
-  - id: contours400
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 400 = 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours400
-    properties:
-      minzoom: 10
-  - id: contours800
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 800 = 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours800
-    properties:
-      minzoom: 8
-  - id: contours1600
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 1600 = 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-        ) AS contours1600
-    properties:
-      minzoom: 6
-  - id: contours3200
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 3200 = 0 AND height::int % 6400 != 0
-        ) AS contours3200
-    properties:
-      minzoom: 4
-  - id: contours6400
-    geometry: multilinestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way
-         FROM contour
-         WHERE height::int % 6400 != 0
-        ) AS contours6400
-    properties:
-      minzoom: 2 
-  
-  - id: contours-text25
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text25
-    properties:
-      minzoom: 18
-  - id: contours-text50
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text50
-    properties:
-      minzoom: 16
-  - id: contours-text100
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 100 = 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text100
-    properties:
-      minzoom: 14
-  - id: contours-text200
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 200 = 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text200
-    properties:
-      minzoom: 12
-  - id: contours-text400
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 400 = 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text400
-    properties:
-      minzoom: 10
-  - id: contours-text800
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 800 = 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text800
-    properties:
-      minzoom: 8
-  - id: contours-text1600
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 1600 = 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
-         ) AS contours_text1600
-    properties:
-      minzoom: 6
-  - id: contours-text3200
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 3200 = 0 AND height::int % 6400 != 0
-         ) AS contours_text3200
-    properties:
-      minzoom: 4
-  - id: contours-text6400
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, height
-         FROM contour
-         WHERE height::int % 6400 = 0
-         ) AS contours_text6400
-    properties:
-      minzoom: 2  
-
   - id: ocean-lz
     geometry: polygon
     <<: *extents
@@ -456,6 +220,99 @@ Layer:
       minzoom: 1
       maxzoom: 3
 
+  - id: contours10
+    geometry: multilinestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way
+         FROM contour
+         WHERE height::int % 10 = 0 AND height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0
+        ) AS contours10
+    properties:
+      minzoom: 13
+  - id: contours20
+    geometry: multilinestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way
+         FROM contour
+         WHERE height::int % 20 = 0 AND height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0
+        ) AS contours10
+    properties:
+      minzoom: 13
+  - id: contours50
+    geometry: multilinestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way
+         FROM contour
+         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0
+        ) AS contours50
+    properties:
+      minzoom: 11
+  - id: contours100
+    geometry: multilinestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way
+         FROM contour
+         WHERE height::int % 100 = 0 AND height::int % 200 != 0
+        ) AS contours100
+    properties:
+      minzoom: 10
+  - id: contours200
+    geometry: multilinestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way
+         FROM contour
+         WHERE height::int % 200 = 0
+        ) AS contours200
+    properties:
+      minzoom: 10
+  
+  - id: contours-text50
+    geometry: linestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way, height
+         FROM contour
+         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
+         ) AS contours_text50
+    properties:
+      minzoom: 16
+  - id: contours-text100
+    geometry: linestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way, height
+         FROM contour
+         WHERE height::int % 100 = 0 AND height::int % 200 != 0 AND height::int % 400 != 0 AND height::int % 800 != 0 AND height::int % 1600 != 0 AND height::int % 3200 != 0 AND height::int % 6400 != 0
+         ) AS contours_text100
+    properties:
+      minzoom: 14
+  
   - id: landcover-line
     geometry: linestring
     <<: *extents
