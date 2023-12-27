@@ -223,7 +223,7 @@
 @motorway-width-z20:             33 * 2;
 @motorway-link-width-z20:        17 * 2;
 @service-width-z20:              12 * 2;
-@minor-service-width-z20:         8.5; * 2
+@minor-service-width-z20:         8.5 * 2;
 
 
 @major-casing-width-z11:          0.3 * 2;
