@@ -65,235 +65,235 @@
 @residential-tunnel-fill: darken(@residential-fill, 5%);
 @living-street-tunnel-fill: lighten(@living-street-fill, 3%);
 
-@motorway-width-z6:               0.4;
-@trunk-width-z6:                  0.4;
+@motorway-width-z6:               0.4 * 2;
+@trunk-width-z6:                  0.4 * 2;
 
-@motorway-width-z7:               0.8;
-@trunk-width-z7:                  0.6;
+@motorway-width-z7:               0.8 * 2;
+@trunk-width-z7:                  0.6 * 2;
 
-@motorway-width-z8:               1;
-@trunk-width-z8:                  1;
-@primary-width-z8:                1;
+@motorway-width-z8:               1 * 2;
+@trunk-width-z8:                  1 * 2;
+@primary-width-z8:                1 * 2;
 
-@motorway-width-z9:               1.4;
-@trunk-width-z9:                  1.4;
-@primary-width-z9:                1.4;
-@secondary-width-z9:              1;
+@motorway-width-z9:               1.4 * 2;
+@trunk-width-z9:                  1.4 * 2;
+@primary-width-z9:                1.4 * 2;
+@secondary-width-z9:              1 * 2;
 
-@motorway-width-z10:              1.9;
-@trunk-width-z10:                 1.9;
-@primary-width-z10:               1.8;
-@secondary-width-z10:             1.1;
-@tertiary-width-z10:              0.7;
+@motorway-width-z10:              1.9 * 2;
+@trunk-width-z10:                 1.9 * 2;
+@primary-width-z10:               1.8 * 2;
+@secondary-width-z10:             1.1 * 2;
+@tertiary-width-z10:              0.7 * 2;
 
-@motorway-width-z11:              2.0;
-@trunk-width-z11:                 1.9;
-@primary-width-z11:               1.8;
-@secondary-width-z11:             1.1;
-@tertiary-width-z11:              0.7;
+@motorway-width-z11:              2.0 * 2;
+@trunk-width-z11:                 1.9 * 2;
+@primary-width-z11:               1.8 * 2;
+@secondary-width-z11:             1.1 * 2;
+@tertiary-width-z11:              0.7 * 2;
 
-@motorway-width-z12:              3.5;
-@motorway-link-width-z12:         1.5;
-@trunk-width-z12:                 3.5;
-@trunk-link-width-z12:            1.5;
-@primary-width-z12:               3.5;
-@primary-link-width-z12:          1.5;
-@secondary-width-z12:             3.5;
-@secondary-link-width-z12:        1.5;
-@tertiary-width-z12:              2.5;
-@tertiary-link-width-z12:         1.5;
-@residential-width-z12:           0.5;
-@unclassified-width-z12:          0.8;
+@motorway-width-z12:              3.5 * 2;
+@motorway-link-width-z12:         1.5 * 2;
+@trunk-width-z12:                 3.5 * 2;
+@trunk-link-width-z12:            1.5 * 2;
+@primary-width-z12:               3.5 * 2;
+@primary-link-width-z12:          1.5 * 2;
+@secondary-width-z12:             3.5 * 2;
+@secondary-link-width-z12:        1.5 * 2;
+@tertiary-width-z12:              2.5 * 2;
+@tertiary-link-width-z12:         1.5 * 2;
+@residential-width-z12:           0.5 * 2;
+@unclassified-width-z12:          0.8 * 2;
 
-@motorway-width-z13:              6;
-@motorway-link-width-z13:         4;
-@trunk-width-z13:                 6;
-@trunk-link-width-z13:             4;
-@primary-width-z13:               5;
-@primary-link-width-z13:          4;
-@secondary-width-z13:             5;
-@secondary-link-width-z13:        4;
-@tertiary-width-z13:              4;
-@tertiary-link-width-z13:         3;
-@residential-width-z13:           2.5;
-@living-street-width-z13:         2;
-@bridleway-width-z13:             0.3;
-@footway-width-z14:               0.7;
-@cycleway-width-z13:              0.7;
-@track-width-z13:                 0.5;
-@track-grade1-width-z13:          0.5;
-@track-grade2-width-z13:          0.5;
+@motorway-width-z13:              6 * 2;
+@motorway-link-width-z13:         4 * 2;
+@trunk-width-z13:                 6 * 2;
+@trunk-link-width-z13:             4 * 2;
+@primary-width-z13:               5 * 2;
+@primary-link-width-z13:          4 * 2;
+@secondary-width-z13:             5 * 2;
+@secondary-link-width-z13:        4 * 2;
+@tertiary-width-z13:              4 * 2;
+@tertiary-link-width-z13:         3 * 2;
+@residential-width-z13:           2.5 * 2;
+@living-street-width-z13:         2 * 2;
+@bridleway-width-z13:             0.3 * 2;
+@footway-width-z14:               0.7 * 2;
+@cycleway-width-z13:              0.7 * 2;
+@track-width-z13:                 0.5 * 2;
+@track-grade1-width-z13:          0.5 * 2;
+@track-grade2-width-z13:          0.5 * 2;
 
-@secondary-width-z14:             5;
-@tertiary-width-z14:              5;
-@residential-width-z14:           3;
-@living-street-width-z14:         3;
-@pedestrian-width-z14:            3;
-@road-width-z14:                  2;
-@service-width-z14:               2;
-@steps-width-z14:                 0.7;
+@secondary-width-z14:             5 * 2;
+@tertiary-width-z14:              5 * 2;
+@residential-width-z14:           3 * 2;
+@living-street-width-z14:         3 * 2;
+@pedestrian-width-z14:            3 * 2;
+@road-width-z14:                  2 * 2;
+@service-width-z14:               2 * 2;
+@steps-width-z14:                 0.7 * 2;
 
-@motorway-width-z15:             10;
-@motorway-link-width-z15:         7.8;
-@trunk-width-z15:                10;
-@trunk-link-width-z15:          7.8;
-@primary-width-z15:              10;
-@primary-link-width-z15:        7.8;
-@secondary-width-z15:             9;
-@secondary-link-width-z15:        7;
-@tertiary-width-z15:              9;
-@tertiary-link-width-z15:         7;
-@residential-width-z15:           5;
-@living-street-width-z15:         5;
-@pedestrian-width-z15:            5;
-@bridleway-width-z15:             1.2;
-@footway-width-z15:               1;
-@cycleway-width-z15:              0.9;
-@track-width-z15:                 1.5;
-@track-grade1-width-z15:          0.75;
-@track-grade2-width-z15:          0.75;
-@steps-width-z15:                 3;
+@motorway-width-z15:             10 * 2;
+@motorway-link-width-z15:         7.8 * 2;
+@trunk-width-z15:                10 * 2;
+@trunk-link-width-z15:          7.8 * 2;
+@primary-width-z15:              10 * 2;
+@primary-link-width-z15:        7.8 * 2;
+@secondary-width-z15:             9 * 2;
+@secondary-link-width-z15:        7 * 2;
+@tertiary-width-z15:              9 * 2;
+@tertiary-link-width-z15:         7 * 2;
+@residential-width-z15:           5 * 2;
+@living-street-width-z15:         5 * 2;
+@pedestrian-width-z15:            5 * 2;
+@bridleway-width-z15:             1.2 * 2;
+@footway-width-z15:               1 * 2;
+@cycleway-width-z15:              0.9 * 2;
+@track-width-z15:                 1.5 * 2;
+@track-grade1-width-z15:          0.75 * 2;
+@track-grade2-width-z15:          0.75 * 2;
+@steps-width-z15:                 3 * 2;
 
-@secondary-width-z16:            10;
-@tertiary-width-z16:             10;
-@residential-width-z16:           6;
-@living-street-width-z16:         6;
-@pedestrian-width-z16:            6;
-@road-width-z16:                  3.5;
-@service-width-z16:               3.5;
-@minor-service-width-z16:         2;
-@footway-width-z16:               1.3;
-@cycleway-width-z16:              0.9;
+@secondary-width-z16:            10 * 2;
+@tertiary-width-z16:             10 * 2;
+@residential-width-z16:           6 * 2;
+@living-street-width-z16:         6 * 2;
+@pedestrian-width-z16:            6 * 2;
+@road-width-z16:                  3.5 * 2;
+@service-width-z16:               3.5 * 2;
+@minor-service-width-z16:         2 * 2;
+@footway-width-z16:               1.3 * 2;
+@cycleway-width-z16:              0.9 * 2;
 
-@motorway-width-z17:             18;
-@motorway-link-width-z17:        12;
-@trunk-width-z17:                18;
-@trunk-link-width-z17:           12;
-@primary-width-z17:              18;
-@primary-link-width-z17:         12;
-@secondary-width-z17:            18;
-@secondary-link-width-z17:       12;
-@tertiary-width-z17:             18;
-@tertiary-link-width-z17:        12;
-@residential-width-z17:          12;
-@living-street-width-z17:        12;
-@pedestrian-width-z17:           12;
-@road-width-z17:                  7;
-@service-width-z17:               7;
-@minor-service-width-z17:         3.5;
+@motorway-width-z17:             18 * 2;
+@motorway-link-width-z17:        12 * 2;
+@trunk-width-z17:                18 * 2;
+@trunk-link-width-z17:           12 * 2;
+@primary-width-z17:              18 * 2;
+@primary-link-width-z17:         12 * 2;
+@secondary-width-z17:            18 * 2;
+@secondary-link-width-z17:       12 * 2;
+@tertiary-width-z17:             18 * 2;
+@tertiary-link-width-z17:        12 * 2;
+@residential-width-z17:          12 * 2;
+@living-street-width-z17:        12 * 2;
+@pedestrian-width-z17:           12 * 2;
+@road-width-z17:                  7 * 2;
+@service-width-z17:               7 * 2;
+@minor-service-width-z17:         3.5 * 2;
 
-@motorway-width-z18:             21;
-@motorway-link-width-z18:        13;
-@trunk-width-z18:                21;
-@trunk-link-width-z18:           13;
-@primary-width-z18:              21;
-@primary-link-width-z18:         13;
-@secondary-width-z18:            21;
-@secondary-link-width-z18:       13;
-@tertiary-width-z18:             21;
-@tertiary-link-width-z18:        13;
-@residential-width-z18:          13;
-@living-street-width-z18:        13;
-@pedestrian-width-z18:           13;
-@road-width-z18:                  8.5;
-@service-width-z18:               8.5;
-@minor-service-width-z18:         4.75;
-@footway-width-z18:               1.3;
-@cycleway-width-z18:              1;
+@motorway-width-z18:             21 * 2;
+@motorway-link-width-z18:        13 * 2;
+@trunk-width-z18:                21 * 2;
+@trunk-link-width-z18:           13 * 2;
+@primary-width-z18:              21 * 2;
+@primary-link-width-z18:         13 * 2;
+@secondary-width-z18:            21 * 2;
+@secondary-link-width-z18:       13 * 2;
+@tertiary-width-z18:             21 * 2;
+@tertiary-link-width-z18:        13 * 2;
+@residential-width-z18:          13 * 2;
+@living-street-width-z18:        13 * 2;
+@pedestrian-width-z18:           13 * 2;
+@road-width-z18:                  8.5 * 2;
+@service-width-z18:               8.5 * 2;
+@minor-service-width-z18:         4.75 * 2;
+@footway-width-z18:               1.3 * 2;
+@cycleway-width-z18:              1 * 2;
 
-@motorway-width-z19:             27;
-@motorway-link-width-z19:        16;
-@trunk-width-z19:                27;
-@trunk-link-width-z19:           16;
-@primary-width-z19:              27;
-@primary-link-width-z19:         16;
-@secondary-width-z19:            27;
-@secondary-link-width-z19:       16;
-@tertiary-width-z19:             27;
-@tertiary-link-width-z19:        16;
-@residential-width-z19:          17;
-@living-street-width-z19:        17;
-@pedestrian-width-z19:           17;
-@road-width-z19:                 11;
-@service-width-z19:              11;
-@minor-service-width-z19:         5.5;
-@footway-width-z19:               1.6;
-@cycleway-width-z19:              1.3;
+@motorway-width-z19:             27 * 2;
+@motorway-link-width-z19:        16 * 2;
+@trunk-width-z19:                27 * 2;
+@trunk-link-width-z19:           16 * 2;
+@primary-width-z19:              27 * 2;
+@primary-link-width-z19:         16 * 2;
+@secondary-width-z19:            27 * 2;
+@secondary-link-width-z19:       16 * 2;
+@tertiary-width-z19:             27 * 2;
+@tertiary-link-width-z19:        16 * 2;
+@residential-width-z19:          17 * 2;
+@living-street-width-z19:        17 * 2;
+@pedestrian-width-z19:           17 * 2;
+@road-width-z19:                 11 * 2;
+@service-width-z19:              11 * 2;
+@minor-service-width-z19:         5.5 * 2;
+@footway-width-z19:               1.6 * 2;
+@cycleway-width-z19:              1.3 * 2;
 
-@motorway-width-z20:             33;
-@motorway-link-width-z20:        17;
-@service-width-z20:              12;
-@minor-service-width-z20:         8.5;
+@motorway-width-z20:             33 * 2;
+@motorway-link-width-z20:        17 * 2;
+@service-width-z20:              12 * 2;
+@minor-service-width-z20:         8.5; * 2
 
 
-@major-casing-width-z11:          0.3;
+@major-casing-width-z11:          0.3 * 2;
 
-@casing-width-z12:                0.3;
-@secondary-casing-width-z12:      0.3;
-@major-casing-width-z12:          0.5;
+@casing-width-z12:                0.3 * 2;
+@secondary-casing-width-z12:      0.3 * 2;
+@major-casing-width-z12:          0.5 * 2;
 
-@casing-width-z13:                0.5;
-@residential-casing-width-z13:    0.5;
-@secondary-casing-width-z13:      0.35;
-@major-casing-width-z13:          0.5;
+@casing-width-z13:                0.5 * 2;
+@residential-casing-width-z13:    0.5 * 2;
+@secondary-casing-width-z13:      0.35 * 2;
+@major-casing-width-z13:          0.5 * 2;
 
-@casing-width-z14:                0.55;
-@secondary-casing-width-z14:      0.35;
-@major-casing-width-z14:          0.6;
+@casing-width-z14:                0.55 * 2;
+@secondary-casing-width-z14:      0.35 * 2;
+@major-casing-width-z14:          0.6 * 2;
 
-@casing-width-z15:                0.6;
-@secondary-casing-width-z15:      0.7;
-@major-casing-width-z15:          0.7;
+@casing-width-z15:                0.6 * 2;
+@secondary-casing-width-z15:      0.7 * 2;
+@major-casing-width-z15:          0.7 * 2;
 
-@casing-width-z16:                0.6;
-@secondary-casing-width-z16:      0.7;
-@major-casing-width-z16:          0.7;
+@casing-width-z16:                0.6 * 2;
+@secondary-casing-width-z16:      0.7 * 2;
+@major-casing-width-z16:          0.7 * 2;
 
-@casing-width-z17:                0.8;
-@secondary-casing-width-z17:      1;
-@major-casing-width-z17:          1;
+@casing-width-z17:                0.8 * 2;
+@secondary-casing-width-z17:      1 * 2;
+@major-casing-width-z17:          1 * 2;
 
-@casing-width-z18:                0.8;
-@secondary-casing-width-z18:      1;
-@major-casing-width-z18:          1;
+@casing-width-z18:                0.8 * 2;
+@secondary-casing-width-z18:      1 * 2;
+@major-casing-width-z18:          1 * 2;
 
-@casing-width-z19:                0.8;
-@secondary-casing-width-z19:      1;
-@major-casing-width-z19:          1;
+@casing-width-z19:                0.8 * 2;
+@secondary-casing-width-z19:      1 * 2;
+@major-casing-width-z19:          1 * 2;
 
-@casing-width-z20:                0.8;
-@secondary-casing-width-z20:      1;
-@major-casing-width-z20:          1;
+@casing-width-z20:                0.8 * 2;
+@secondary-casing-width-z20:      1 * 2;
+@major-casing-width-z20:          1 * 2;
 
-@bridge-casing-width-z12:         0.1;
-@major-bridge-casing-width-z12:   0.5;
-@bridge-casing-width-z13:         0.5;
-@major-bridge-casing-width-z13:   0.5;
-@bridge-casing-width-z14:         0.5;
-@major-bridge-casing-width-z14:   0.6;
-@bridge-casing-width-z15:         0.75;
-@major-bridge-casing-width-z15:   0.75;
-@bridge-casing-width-z16:         0.75;
-@major-bridge-casing-width-z16:   0.75;
-@bridge-casing-width-z17:         0.8;
-@major-bridge-casing-width-z17:   1;
-@bridge-casing-width-z18:         0.8;
-@major-bridge-casing-width-z18:   1;
-@bridge-casing-width-z19:         0.8;
-@major-bridge-casing-width-z19:   1;
-@bridge-casing-width-z20:         0.8;
-@major-bridge-casing-width-z20:   1;
+@bridge-casing-width-z12:         0.1 * 2;
+@major-bridge-casing-width-z12:   0.5 * 2;
+@bridge-casing-width-z13:         0.5 * 2;
+@major-bridge-casing-width-z13:   0.5 * 2;
+@bridge-casing-width-z14:         0.5 * 2;
+@major-bridge-casing-width-z14:   0.6 * 2;
+@bridge-casing-width-z15:         0.75 * 2;
+@major-bridge-casing-width-z15:   0.75 * 2;
+@bridge-casing-width-z16:         0.75 * 2;
+@major-bridge-casing-width-z16:   0.75 * 2;
+@bridge-casing-width-z17:         0.8 * 2;
+@major-bridge-casing-width-z17:   1 * 2;
+@bridge-casing-width-z18:         0.8 * 2;
+@major-bridge-casing-width-z18:   1 * 2;
+@bridge-casing-width-z19:         0.8 * 2;
+@major-bridge-casing-width-z19:   1 * 2;
+@bridge-casing-width-z20:         0.8 * 2;
+@major-bridge-casing-width-z20:   1 * 2;
 
-@paths-background-width:          1;
-@paths-bridge-casing-width:       0.5;
-@paths-tunnel-casing-width:       1;
+@paths-background-width:          1 * 2;
+@paths-bridge-casing-width:       0.5 * 2;
+@paths-tunnel-casing-width:       1 * 2;
 
-@mini-roundabout-width:           4;
+@mini-roundabout-width:           4 * 2;
 
 @junction-text-color:             #960000;
 @halo-color-for-minor-road:       white;
 @lowzoom-halo-color:              white;
-@lowzoom-halo-width:              1;
+@lowzoom-halo-width:              1 * 2;
 
 @motorway-oneway-arrow-color:     darken(@motorway-casing, 25%);
 @trunk-oneway-arrow-color:        darken(@trunk-casing, 25%);
@@ -3156,11 +3156,11 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 
   [int_tc_type = 'track'][zoom >= 15] {
     marker-fill: @track-fill;
-    marker-width: 6;
-    marker-height: 6;
+    marker-width: 12;
+    marker-height: 12;
     [zoom >= 17] {
-      marker-width: 10;
-      marker-height: 10;
+      marker-width: 20;
+      marker-height: 20;
     }
     marker-allow-overlap: true;
     marker-ignore-placement: true;
@@ -3282,7 +3282,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'motorway_junction'] {
     [zoom >= 11] {
       text-name: "[ref]";
-      text-size: 10;
+      text-size: 20;
       text-fill: @junction-text-color;
       text-min-distance: 2;
       text-face-name: @oblique-fonts;
@@ -3299,7 +3299,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         }
       }
       [zoom >= 15] {
-        text-size: 11;
+        text-size: 22;
         text-line-spacing: -1.65; // -0.15 em
       }
     }
@@ -3309,7 +3309,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'traffic_signals'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 20;
       text-fill: black;
       text-face-name: @book-fonts;
       text-halo-radius: @standard-halo-radius;
@@ -3318,7 +3318,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-line-spacing: -1.5; // -0.15 em
       text-min-distance: 2;
       [zoom >= 17] {
-        text-size: 11;
+        text-size: 22;
         text-line-spacing: -1.65; // -0.15 em
         /* Offset name on traffic_signals on zoomlevels where they are displayed
         in order not to hide the text */
@@ -3334,7 +3334,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [man_made = 'bridge'] {
     [zoom >= 12][way_pixels > 125][way_pixels <= 768000] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 20;
       text-wrap-width: 30; // 3 em
       text-line-spacing: -1.2; // -0.15 em
       text-fill: black;
@@ -3344,28 +3344,28 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-margin: 3; // 0.3 em
       text-wrap-width: 30;
       [way_pixels > 250] {
-        text-size: 11;
+        text-size: 22;
         text-margin: 3.3; // 0.3 em
         text-wrap-width: 33; // 3 em
         text-line-spacing: -1.35; // -0.15 em
         text-halo-radius: @standard-halo-radius * 1.1;
       }
       [way_pixels > 1000] {
-        text-size: 12;
+        text-size: 24;
         text-margin: 3.6; // 0.3 em
         text-wrap-width: 36; // 3 em
         text-line-spacing: -1.65; // -0.15 em
         text-halo-radius: @standard-halo-radius * 1.2;
       }
       [way_pixels > 4000] {
-        text-size: 13;
+        text-size: 26;
         text-margin: 3.9; // 0.3 em
         text-wrap-width: 39; // 3 em
         text-line-spacing: -1.80; // -0.15 em
         text-halo-radius: @standard-halo-radius * 1.3;
       }
       [way_pixels > 16000] {
-        text-size: 14;
+        text-size: 28;
         text-margin: 4.2; // 0.3 em
         text-wrap-width: 42; // 3 em
         text-line-spacing: -1.95; // -0.15 em
@@ -3730,7 +3730,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'taxiway'] {
     [zoom >= 15] {
       text-name: "[refs]";
-      text-size: 10;
+      text-size: 20;
       text-fill: #333;
       text-spacing: 750;
       text-clip: false;
@@ -3748,13 +3748,13 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'residential'] {
     [zoom >= 15] {
       text-name: "[refs]";
-      text-size: 8;
+      text-size: 16;
 
       [zoom >= 16] {
         text-size: 9;
       }
       [zoom >= 17] {
-        text-size: 11;
+        text-size: 22;
       }
 
       text-fill: #000;
@@ -3771,7 +3771,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'track'] {
     [zoom >= 15] {
       text-name: "[refs]";
-      text-size: 8;
+      text-size: 16;
       text-dy: 5;
 
       [zoom >= 16] {
@@ -3779,7 +3779,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         text-dy: 7;
       }
       [zoom >= 17] {
-        text-size: 11;
+        text-size: 22;
         text-dy: 9;
       }
 
@@ -3806,7 +3806,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'construction'][construction = 'primary'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: 16;
       text-fill: black;
       text-spacing: 300;
       text-clip: false;
@@ -3824,20 +3824,20 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-size: 9;
     }
     [zoom >= 15] {
-      text-size: 10;
+      text-size: 20;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: 24;
     }
   }
   [highway = 'secondary'],
   [highway = 'construction'][construction = 'secondary'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: 16;
       text-fill: black;
       text-spacing: 300;
       text-clip: false;
@@ -3851,13 +3851,13 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-size: 9;
     }
     [zoom >= 15] {
-      text-size: 10;
+      text-size: 20;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: 24;
     }
   }
   [highway = 'tertiary'],
@@ -3875,10 +3875,10 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: 24;
     }
   }
   [highway = 'construction'][construction = null][zoom >= 16] {
@@ -3894,11 +3894,11 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     text-repeat-distance: @major-highway-text-repeat-distance;
 
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
       text-spacing: 400;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: 24;
       text-spacing: 400;
     }
   }
@@ -3911,7 +3911,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'construction'][construction = 'road'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: 16;
       text-fill: black;
       text-spacing: 300;
       text-clip: false;
@@ -3926,11 +3926,11 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-size: 9;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
       text-spacing: 400;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: 24;
       text-spacing: 400;
     }
   }
@@ -3953,7 +3953,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
     }
   }
 
@@ -3963,7 +3963,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [highway = 'construction'][construction = 'pedestrian'][zoom >= 16] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: 16;
       text-fill: black;
       text-spacing: 300;
       text-clip: false;
@@ -3981,10 +3981,10 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-size: 9;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: 24;
     }
   }
 }
@@ -3993,7 +3993,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   [way_pixels > 3000],
   [zoom >= 17] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: 22;
     text-face-name: @book-fonts;
     text-wrap-width: 30; // 2.7 em
     text-line-spacing: -1.7; // -0.15 em
@@ -4006,7 +4006,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom >= 15] {
       text-name: "[name]";
       text-fill: #222;
-      text-size: 8;
+      text-size: 16;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
       text-spacing: 300;
@@ -4022,7 +4022,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-dy: 7;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
       text-dy: 9;
     }
   }
@@ -4053,7 +4053,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [highway = 'steps'] { text-repeat-distance: @minor-highway-text-repeat-distance; }
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: 22;
       text-dy: 9;
     }
   }
@@ -4137,7 +4137,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [oneway = 'yes'],
       [oneway = '-1'] {
         text-name: "'🠖'";
-        text-size: 15;
+        text-size: 30;
         text-clip: false;
         text-spacing: 180;
         text-placement: line;
@@ -4194,7 +4194,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom >= 17] {
       text-name: "[name]";
       text-fill: #666666;
-      text-size: 10;
+      text-size: 20;
       text-dy: 6;
       text-spacing: 900;
       text-clip: false;
@@ -4205,7 +4205,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-repeat-distance: @railway-text-repeat-distance;
     }
     [zoom >= 19] {
-      text-size: 11;
+      text-size: 22;
       text-dy: 7;
     }
   }
@@ -4216,7 +4216,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [zoom >= 11] {
         text-name: "[name]";
         text-fill: #666666;
-        text-size: 10;
+        text-size: 20;
         text-dy: 3;
         text-spacing: 300;
         text-clip: false;
@@ -4233,11 +4233,11 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         text-spacing: 600;
       }
       [zoom >= 17] {
-        text-size: 11;
+        text-size: 22;
         text-dy: 7;
       }
       [zoom >= 19] {
-        text-size: 12;
+        text-size: 24;
         text-dy: 8;
       }
     }
@@ -4245,7 +4245,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [zoom >= 14] {
         text-name: "[name]";
         text-fill: #666666;
-        text-size: 10;
+        text-size: 20;
         text-dy: 6;
         text-spacing: 300;
         text-clip: false;
@@ -4257,11 +4257,11 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       }
       [zoom >= 17] {
         text-spacing: 600;
-        text-size: 11;
+        text-size: 22;
         text-dy: 7;
       }
       [zoom >= 19] {
-        text-size: 12;
+        text-size: 24;
         text-dy: 8;
       }
     }
@@ -4275,7 +4275,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom >= 17] {
       text-name: "[name]";
       text-fill: #666666;
-      text-size: 10;
+      text-size: 20;
       text-dy: 6;
       text-spacing: 900;
       text-clip: false;
@@ -4286,7 +4286,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-repeat-distance: @railway-text-repeat-distance;
     }
     [zoom >= 19] {
-      text-size: 11;
+      text-size: 22;
       text-dy: 7;
     }
   }

@@ -144,7 +144,7 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-fill: #666666;
-      text-size: 10;
+      text-size: 20;
       text-dy: 4;
       text-spacing: 900;
       text-clip: false;
@@ -155,7 +155,7 @@
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
       [zoom >= 19] {
-        text-size: 11;
+        text-size: 22;
         text-dy: 5;
       }
       [feature = 'man_made_pipeline'] {

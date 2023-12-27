@@ -24,18 +24,18 @@
 @aboriginal: #82643a;
 @religious-icon: #000000;
 
-@landcover-font-size: 10;
+@landcover-font-size: 20;
 @landcover-wrap-width-size: 30; // 3 em
 @landcover-line-spacing-size: -1.5; // -0.15 em
-@landcover-font-size-big: 12;
+@landcover-font-size-big: 24;
 @landcover-wrap-width-size-big: 36; // 3 em
 @landcover-line-spacing-size-big: -1.8; // -0.15 em
-@landcover-font-size-bigger: 15;
+@landcover-font-size-bigger: 30;
 @landcover-wrap-width-size-bigger: 45; // 3 em
 @landcover-line-spacing-size-bigger: -2.25; // -0.15 em
 @landcover-face-name: @oblique-fonts;
 
-@standard-font-size: 10;
+@standard-font-size: 20;
 @standard-wrap-width: 30; // 3 em
 @standard-line-spacing-size: -1.5; // -0.15 em
 @standard-font: @book-fonts;
@@ -306,8 +306,8 @@
       [zoom = 17] {
         nozzle/marker-fill: @marina-text;
         nozzle/marker-line-width: 0;
-        nozzle/marker-width: 3;
-        nozzle/marker-height: 3;
+        nozzle/marker-width: 6;
+        nozzle/marker-height: 6;
       }
       [zoom >= 18] {
         nozzle/marker-file: url('symbols/amenity/fountain.svg');
@@ -1629,7 +1629,7 @@
 
   [feature = 'place_locality'][zoom >= 16] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: @placenames;
     text-face-name: @book-fonts;
     text-halo-fill: @standard-halo-fill;
@@ -1638,7 +1638,7 @@
     text-line-spacing: -0.8; // -0.08 em
     text-margin: 7.0; // 0.7 em
     [zoom >= 17] {
-      text-size: 12;
+      text-size: 24;
       text-wrap-width: 60; // 5.0 em
       text-line-spacing: -0.60; // -0.05 em
       text-margin: 8.4; // 0.7 em
@@ -1649,7 +1649,7 @@
 
   [feature = 'place_square'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: 22;
     text-face-name: @book-fonts;
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
@@ -2348,7 +2348,7 @@
 
   [feature = 'natural_spring'][zoom >= 16] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
     text-fill: @water-text;
@@ -3046,7 +3046,7 @@
   [feature = 'attraction_water_slide'] {
     [zoom >= 19] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 20;
       text-face-name: @oblique-fonts;
       text-fill: darken(@pitch, 40%);
       text-halo-radius: @standard-halo-radius;
@@ -3096,23 +3096,23 @@
       marker-allow-overlap: true;
       marker-line-width: 0;
       marker-ignore-placement: true;
-      marker-width: 2.5;
-      marker-height: 2.5;
+      marker-width: 5.0;
+      marker-height: 5.0;
       [zoom >= 17] {
-        marker-width: 5;
-        marker-height: 5;
-      }
-      [zoom >= 18] {
         marker-width: 10;
         marker-height: 10;
       }
-      [zoom >= 19] {
-        marker-width: 15;
-        marker-height: 15;
+      [zoom >= 18] {
+        marker-width: 20;
+        marker-height: 20;
       }
-      [zoom >= 20] {
+      [zoom >= 19] {
         marker-width: 30;
         marker-height: 30;
+      }
+      [zoom >= 20] {
+        marker-width: 60;
+        marker-height: 60;
       }
     }
   }
@@ -3122,17 +3122,17 @@
       trunk/marker-fill: #6b8d5e; // Same opacity and color as forest svg patterns
       trunk/marker-allow-overlap: true;
       trunk/marker-line-width: 0;
-      trunk/marker-width: 2;
-      trunk/marker-height: 2;
+      trunk/marker-width: 4;
+      trunk/marker-height: 4;
       trunk/marker-ignore-placement: true;
     }
     [zoom >= 19] {
-      trunk/marker-width: 3;
-      trunk/marker-height: 3;
-    }
-    [zoom >= 20] {
       trunk/marker-width: 6;
       trunk/marker-height: 6;
+    }
+    [zoom >= 20] {
+      trunk/marker-width: 12;
+      trunk/marker-height: 12;
     }
   }
 }

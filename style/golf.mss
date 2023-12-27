@@ -35,7 +35,7 @@
   [feature = 'golf_hole'][ref != ''],
   [feature = 'golf_hole'][name != ''] {
     text-placement: line;
-    text-size: 11;
+    text-size: 22;
     text-fill: @golf-color;
     text-face-name: @book-fonts;
     text-halo-radius: @standard-halo-radius;
@@ -44,7 +44,7 @@
 
     [name != ''] { text-name: "[name]"; }
 
-    [zoom >= 17] { text-size: 13; }
+    [zoom >= 17] { text-size: 26; }
   }
 }
 
