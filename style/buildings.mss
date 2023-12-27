@@ -19,6 +19,7 @@
       line-color: @building-line;
       line-width: .75;
       line-clip: false;
+      comp-op: destination-over; /* Set comp-op for buildings layer */
     }
     [amenity = 'place_of_worship'],
     [aeroway = 'terminal'],
