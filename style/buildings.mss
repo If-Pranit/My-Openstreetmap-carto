@@ -14,6 +14,7 @@
   [zoom >= 14] {
     polygon-fill: @building-low-zoom;
     polygon-clip: false;
+    polygon-opacity: 0.6;
     [zoom >= 15] {
       polygon-fill: @building-fill;
       line-color: @building-line;
