@@ -14,7 +14,7 @@
   [zoom >= 14] {
     polygon-fill: @building-low-zoom;
     polygon-clip: false;
-    polygon-opacity: 0.6;
+    polygon-opacity: 0.75;
     [zoom >= 15] {
       polygon-fill: @building-fill;
       line-color: @building-line;
@@ -50,8 +50,8 @@
     marker-allow-overlap: true;
     marker-ignore-placement: true;
     marker-file: url('symbols/rect.svg');
-    marker-width: 5.0;
-    marker-height: 5.0;
+    marker-width: 10.0;
+    marker-height: 10.0;
     marker-opacity: 0.0;
     ["entrance" = "main"] {
       marker-opacity: 1.0;
@@ -65,8 +65,8 @@
     ["entrance" = "service"],
     ["entrance" = "staircase"] {
       marker-opacity: 1.0;
-      marker-width: 6.0;
-      marker-height: 6.0;
+      marker-width: 12.0;
+      marker-height: 12.0;
       ["entrance" = "service"] {
         marker-file: url('symbols/corners.svg');
       }
@@ -81,7 +81,7 @@
     }
   }
   [zoom >= 20]["entrance" != null] {
-    marker-width: 8.0;
-    marker-height: 8.0;
+    marker-width: 16.0;
+    marker-height: 16.0;
   }
 }
