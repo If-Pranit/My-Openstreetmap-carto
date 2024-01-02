@@ -35,7 +35,7 @@
       }
       [zoom >= 16] { 
         line-color: @roller-coaster-casing;
-        line-width: 2.5; * 1.5
+        line-width: 2.5 * 1.5;
       }
       [zoom >= 17] { line-width: 4 * 1.5; }
       [zoom >= 18] { line-width: 6 * 1.5; }
