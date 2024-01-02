@@ -8,14 +8,14 @@
 #water-barriers-point, #water-barriers-line, #water-barriers-poly {
   [waterway = 'dam'] {
     #water-barriers-poly[zoom >= 13] {
-      line-width: 3;
+      line-width: 2 * 2;
       line-color: @dam-line;
       line-join: round;
       line-cap: round;
       polygon-fill: @dam;
     }
     #water-barriers-line[zoom >= 13] {
-      line-width: 3;
+      line-width: 2 * 2;
       line-color: @dam-line;
       line-join: round;
       line-cap: round;
@@ -23,9 +23,9 @@
     #water-barriers-point[zoom >= 17] {
       marker-fill: @dam;
       marker-line-color: @dam-line;
-      marker-line-width: 2;
-      marker-width: 10;
-      [zoom >= 18] { marker-width: 11; }
+      marker-line-width: 1 * 2;
+      marker-width: 8 * 2;
+      [zoom >= 18] { marker-width: 10 * 2; }
       marker-allow-overlap: true;
       marker-ignore-placement: true;
     }
@@ -34,15 +34,15 @@
   [waterway = 'weir'] {
     #water-barriers-line[zoom >= 13] {
       line-color: @weir-line;
-      line-width: 3;
-      line-dasharray: 3,2;
+      line-width: 2 * 2;
+      line-dasharray: 3,3;
     }
     #water-barriers-point[zoom >= 17] {
       marker-fill: @water-color;
       marker-line-color: @weir-line;
-      marker-line-width: 2;
-      marker-width: 10;
-      [zoom >= 18] { marker-width: 11; }
+      marker-line-width: 1 * 2;
+      marker-width: 8 * 2;
+      [zoom >= 18] { marker-width: 10 * 2; }
       marker-allow-overlap: true;
       marker-ignore-placement: true;
     }
@@ -51,13 +51,13 @@
   [waterway = 'lock_gate'] {
     #water-barriers-line[zoom >= 13] {
       line-color: @lock-gate-line;
-      line-width: 3;
+      line-width: 2 * 2;
     }
     #water-barriers-point[zoom >= 17] {
       marker-fill: @lock-gate;
       marker-line-width: 0;
-      marker-width: 10;
-      [zoom >= 18] { marker-width: 11; }
+      marker-width: 8 * 2;
+      [zoom >= 18] { marker-width: 10 * 2; }
       marker-allow-overlap: true;
       marker-ignore-placement: true;
     }
@@ -70,12 +70,12 @@
       polygon-fill: @land-color;
     }
     #piers-line {
-      line-width: 0.8;
+      line-width: 0.5 * 2;
       line-color: @land-color;
       line-cap: square;
-      [zoom >= 13] { line-width: 1; }
-      [zoom >= 15] { line-width: 3; }
-      [zoom >= 17] { line-width: 4; }
+      [zoom >= 13] { line-width: 1 * 2; }
+      [zoom >= 15] { line-width: 2 * 2; }
+      [zoom >= 17] { line-width: 4 * 2; }
     }
   }
 
@@ -87,30 +87,30 @@
     #piers-line {
       line-width: 1;
       line-color: @breakwater-color;
-      [zoom >= 13] { line-width: 3; }
-      [zoom >= 16] { line-width: 4; }
+      [zoom >= 13] { line-width: 2 * 2; }
+      [zoom >= 16] { line-width: 4 * 2; }
     }
   }
 }
 
 #marinas-area {
   [zoom >= 14] {
-    a/line-width: 1;
+    a/line-width: 1 * 2;
     a/line-offset: -0.5;
     a/line-color: blue;
     a/line-opacity: 0.1;
     a/line-join: round;
     a/line-cap: round;
-    b/line-width: 3;
+    b/line-width: 3 * 2;
     b/line-offset: -1.5;
     b/line-color: blue;
     b/line-opacity: 0.1;
     b/line-join: round;
     b/line-cap: round;
     [zoom >= 17] {
-      a/line-width: 3;
+      a/line-width: 2 * 2;
       a/line-offset: -1;
-      b/line-width: 6;
+      b/line-width: 6 * 2;
       b/line-offset: -3;
     }
   }
@@ -126,7 +126,7 @@
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
       text-fill: #222;
-      text-size: 10;
+      text-size: 10 * 2;
       text-face-name: @book-fonts;
       #text-line {
         text-placement: line;
@@ -149,7 +149,7 @@
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
       text-fill: #222;
-      text-size: 10;
+      text-size: 10 * 2;
       text-face-name: @book-fonts;
       #text-line {
         text-placement: line;

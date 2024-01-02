@@ -7,12 +7,12 @@
 #water-areas {
   [natural = 'glacier']::natural {
     [zoom >= 5] {
-      line-width: 1.2;
+      line-width: 1.0 * 2;
       line-color: @glacier-line;
       polygon-fill: @glacier;
       [zoom >= 10] {
-        line-dasharray: 4,3;
-        line-width: 1.8;
+        line-dasharray: 4,2;
+        line-width: 1.5 * 2;
       }
     }
   }
@@ -38,15 +38,15 @@
 #water-lines-low-zoom {
   [waterway = 'river'][zoom >= 8][zoom < 12] {
     [int_intermittent = 'yes'] {
-      line-dasharray: 10,5;
+      line-dasharray: 8,4;
       line-cap: butt;
       line-join: round;
       line-clip: false;
     }
     line-color: @water-color;
-    line-width: 1.2;
-    [zoom >= 9] { line-width: 2.2; }
-    [zoom >= 10] { line-width: 3.0; }
+    line-width: 0.7;
+    [zoom >= 9] { line-width: 1.2 * 2; }
+    [zoom >= 10] { line-width: 1.6 * 2; }
   }
 }
 
@@ -57,13 +57,13 @@
     [int_tunnel = 'no'] {
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
-        line-width: 3.0;
+        line-width: 2.5 * 2;
         line-color: white;
         [waterway = 'stream'][zoom >= 15] {
-          line-width: 4.0;
+          line-width: 3.5 * 2;
         }
         [int_intermittent = 'yes'] {
-          line-dasharray: 5,4;
+          line-dasharray: 4,3;
           line-cap: butt;
           line-join: round;
           line-clip: false;
@@ -80,7 +80,7 @@
     // the additional line of land color is used to provide a background for dashed casings
     [int_tunnel = 'yes'] {
       background/line-color: @land-color;
-      background/line-width: 2;
+      background/line-width: 2 * 2;
       background/line-cap: round;
       background/line-join: round;
     }
@@ -89,15 +89,15 @@
       [zoom >= 14] {
         bridgecasing/line-color: black;
         bridgecasing/line-join: round;
-        bridgecasing/line-width: 6;
-        [zoom >= 15] { bridgecasing/line-width: 7; }
-        [zoom >= 17] { bridgecasing/line-width: 11; }
-        [zoom >= 18] { bridgecasing/line-width: 13; }
+        bridgecasing/line-width: 6 * 2;
+        [zoom >= 15] { bridgecasing/line-width: 7 * 2; }
+        [zoom >= 17] { bridgecasing/line-width: 11 * 2; }
+        [zoom >= 18] { bridgecasing/line-width: 13 * 2; }
       }
     }
 
     water/line-color: @water-color;
-    water/line-width: 2;
+    water/line-width: 2 * 2;
     water/line-cap: round;
     water/line-join: round;
 
@@ -105,10 +105,10 @@
       [bridge = 'yes'][zoom >= 14] {
         bridgefill/line-color: white;
         bridgefill/line-join: round;
-        bridgefill/line-width: 4;
-        [zoom >= 15] { bridgefill/line-width: 5; }
-        [zoom >= 17] { bridgefill/line-width: 9; }
-        [zoom >= 18] { bridgefill/line-width: 11; }
+        bridgefill/line-width: 4 * 2;
+        [zoom >= 15] { bridgefill/line-width: 5 * 2; }
+        [zoom >= 17] { bridgefill/line-width: 9 * 2; }
+        [zoom >= 18] { bridgefill/line-width: 11 * 2; }
       }
       water/line-dasharray: 4,3;
       water/line-cap: butt;
@@ -116,18 +116,18 @@
       water/line-clip: false;
     }
 
-    [zoom >= 13] { water/line-width: 3; }
-    [zoom >= 14] { water/line-width: 5; }
-    [zoom >= 15] { water/line-width: 6; }
-    [zoom >= 17] { water/line-width: 10; }
-    [zoom >= 18] { water/line-width: 12; }
+    [zoom >= 13] { water/line-width: 3 * 2; }
+    [zoom >= 14] { water/line-width: 5 * 2; }
+    [zoom >= 15] { water/line-width: 6 * 2; }
+    [zoom >= 17] { water/line-width: 10 * 2; }
+    [zoom >= 18] { water/line-width: 12 * 2; }
 
     [int_tunnel = 'yes'] {
-      [zoom >= 13] { background/line-width: 3; }
-      [zoom >= 14] { background/line-width: 5; }
-      [zoom >= 15] { background/line-width: 6; }
-      [zoom >= 17] { background/line-width: 10; }
-      [zoom >= 18] { background/line-width: 12; }
+      [zoom >= 13] { background/line-width: 3 * 2; }
+      [zoom >= 14] { background/line-width: 5 * 2; }
+      [zoom >= 15] { background/line-width: 6 * 2; }
+      [zoom >= 17] { background/line-width: 10 * 2; }
+      [zoom >= 18] { background/line-width: 12 * 2; }
 
       water/line-dasharray: 4,2;
       background/line-cap: butt;
@@ -135,11 +135,11 @@
       water/line-cap: butt;
       water/line-join: miter;
       tunnelfill/line-color: #f3f7f7;
-      tunnelfill/line-width: 1;
-      [zoom >= 14] { tunnelfill/line-width: 2; }
-      [zoom >= 15] { tunnelfill/line-width: 3; }
-      [zoom >= 17] { tunnelfill/line-width: 7; }
-      [zoom >= 18] { tunnelfill/line-width: 8; }
+      tunnelfill/line-width: 1 * 2;
+      [zoom >= 14] { tunnelfill/line-width: 2 * 2; }
+      [zoom >= 15] { tunnelfill/line-width: 3 * 2; }
+      [zoom >= 17] { tunnelfill/line-width: 7 * 2; }
+      [zoom >= 18] { tunnelfill/line-width: 8 * 2; }
     }
   }
 
@@ -150,21 +150,21 @@
     [zoom >= 15] {
       // the additional line of land color is used to provide a background for dashed casings
       [int_tunnel = 'yes'] {
-        background/line-width: 2;
+        background/line-width: 2 * 2;
         background/line-color: @land-color;
       }
-      water/line-width: 2;
+      water/line-width: 2 * 2;
       water/line-color: @water-color;
 
       [bridge = 'yes'] {
         bridgecasing/line-color: black;
         bridgecasing/line-join: round;
-        bridgecasing/line-width: 4;
-        [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
+        bridgecasing/line-width: 4 * 2;
+        [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4 * 2; }
         bridgeglow/line-color: white;
         bridgeglow/line-join: round;
-        bridgeglow/line-width: 3;
-        [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }
+        bridgeglow/line-width: 3 * 2;
+        [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3 * 2; }
       }
 
       [int_intermittent = 'yes'] {
@@ -175,22 +175,22 @@
       }
 
       [waterway = 'stream'][zoom >= 15] {
-        water/line-width: 3;
+        water/line-width: 3 * 2;
 
         [int_tunnel = 'yes'] {
-          background/line-width: 3;
+          background/line-width: 3 * 2;
         }
       }
       [int_tunnel = 'yes'][zoom >= 15] {
-        background/line-width: 3.5;
-        water/line-width: 3.5;
+        background/line-width: 3.5 * 2;
+        water/line-width: 3.5 * 2;
         [waterway = 'stream'] {
-          background/line-width: 4.5;
-          water/line-width: 4.5;
+          background/line-width: 4.5 * 2;
+          water/line-width: 4.5 * 2;
         }
         water/line-dasharray: 4,2;
-        tunnelfill/line-width: 1;
-        [waterway = 'stream'] { tunnelfill/line-width: 2; }
+        tunnelfill/line-width: 1 * 2;
+        [waterway = 'stream'] { tunnelfill/line-width: 2 * 2; }
         tunnelfill/line-color: #f3f7f7;
       }
     }
@@ -205,7 +205,7 @@
       text-placement: line;
       text-fill: @water-text;
       text-spacing: 400;
-      text-size: 14;
+      text-size: 10 * 2;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
   }
@@ -213,7 +213,7 @@
   [lock != 'yes'][int_tunnel != 'yes'] {
     [waterway = 'river'][zoom >= 13] {
       text-name: "[name]";
-      text-size: 13;
+      text-size: 10 * 2;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: @standard-halo-radius;
@@ -221,12 +221,12 @@
       text-spacing: 400;
       text-placement: line;
       text-repeat-distance: @waterway-text-repeat-distance;
-      [zoom >= 14] { text-size: 13; }
+      [zoom >= 14] { text-size: 12 * 2; }
     }
 
     [waterway = 'canal'][zoom >= 13] {
       text-name: "[name]";
-      text-size: 13;
+      text-size: 10 * 2;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: @standard-halo-radius;
@@ -237,7 +237,7 @@
 
     [waterway = 'stream'][zoom >= 15] {
       text-name: "[name]";
-      text-size: 14;
+      text-size: 10 * 2;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: @standard-halo-radius;
@@ -253,7 +253,7 @@
     [waterway = 'ditch'] {
       [zoom >= 15] {
         text-name: "[name]";
-        text-size: 14;
+        text-size: 10 * 2;
         text-face-name: @oblique-fonts;
         text-fill: @water-text;
         text-halo-radius: @standard-halo-radius;
@@ -269,7 +269,7 @@
   [natural = 'bay'][zoom >= 14],
   [natural = 'strait'][zoom >= 14] {
     text-name: "[name]";
-    text-size: 13;
+    text-size: 10 * 2;
     text-face-name: @oblique-fonts;
     text-fill: @water-text;
     text-halo-radius: @standard-halo-radius;
@@ -278,7 +278,7 @@
     text-spacing: 400;
     text-placement: line;
     [zoom >= 15] {
-      text-size: 14;
+      text-size: 12 * 2;
     }
   }
 }
@@ -293,22 +293,22 @@
     [zoom >= 5][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
       text-name: "[name]";
-      text-size: 14;
-      text-wrap-width: 30; // 3 em
+      text-size: 10 * 2;
+      text-wrap-width: 25 * 2; // 2.5 em
       text-line-spacing: -1.5; // -0.15 em
       [way_pixels > 12000] {
-        text-size: 13;
-        text-wrap-width: 37; // 3.1 em
+        text-size: 12 * 2;
+        text-wrap-width: 37 * 2; // 3.1 em
         text-line-spacing: -1.6; // -0.13 em
       }
       [way_pixels > 48000] {
-        text-size: 16;
-        text-wrap-width: 59; // 3.9 em
+        text-size: 15 * 2;
+        text-wrap-width: 59 * 2; // 3.9 em
         text-line-spacing: -1.5; // -0.10 em
       }
       [way_pixels > 192000] {
-        text-size: 19;
-        text-wrap-width: 95; // 5.0 em
+        text-size: 19 * 2;
+        text-wrap-width: 95 * 2; // 5.0 em
         text-line-spacing: -0.95; // -0.05 em
       }
       text-fill: @water-text;
@@ -324,8 +324,8 @@
   [feature = 'natural_bay'],
   [feature = 'natural_strait'] {
     text-name: "[name]";
-    text-size: 13;
-    text-wrap-width: 30; // 3 em
+    text-size: 10 * 2;
+    text-wrap-width: 25 * 2; // 2.5 em
     text-line-spacing: -1.5; // -0.15 em
     text-fill: @water-text;
     text-face-name: @oblique-fonts;
@@ -333,8 +333,8 @@
     text-halo-fill: @standard-halo-fill;
     text-placement: interior;
     [zoom >= 15] {
-      text-size: 14;
-      text-wrap-width: 40; // 4 em
+      text-size: 12 * 2;
+      text-wrap-width: 37 * 2; // 3.1 em
       text-line-spacing: -1.6; // -0.13 em
     }
   }

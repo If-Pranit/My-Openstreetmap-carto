@@ -1,4 +1,4 @@
-@building-fill: #f5ede6;  // Lch(84, 5, 68)
+@building-fill: #d9d0c9;  // Lch(84, 5, 68)
 @building-line: #f2a96f;  // Lch(70, 9, 66)
 @building-low-zoom: darken(@building-fill, 4%);
 
@@ -18,7 +18,7 @@
     [zoom >= 15] {
       polygon-fill: @building-fill;
       line-color: @building-line;
-      line-width: .75 * 1.5;
+      line-width: .75 * 2;
       line-clip: false;
     }
     [amenity = 'place_of_worship'],
