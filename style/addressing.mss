@@ -5,7 +5,7 @@
 #interpolation {
   [zoom >= 17] {
     line-color: @address-color;
-    line-width: 1;
+    line-width: 1 * 1.75;
     line-dasharray: 2,4;
   }
 }
@@ -24,7 +24,7 @@
     text-fill: @address-color;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-size: 20;
+    text-size: 10  * 2;
     text-wrap-width: 45; // 4.5 em
     text-line-spacing: -1.5; // -0.15 em
     text-margin: 3; // 0.3 em

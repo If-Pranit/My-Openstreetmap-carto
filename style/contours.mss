@@ -22,23 +22,23 @@
 /* zoom Level 10 */
 #contours200[zoom = 10] {
   line-color: lighten(@contour, @contours-medium-lighten);
-  line-width: @contours-line-width * @contours-medium-multiplier;
+  line-width: @contours-line-width * @contours-minor-multiplier;
   line-opacity: 0.7;
 }
 #contours100[zoom = 10] {
-  line-color: lighten(@contour, @contours-minor-lighten);
+  line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.6;
+  line-opacity: 0.5;
 }
 
 /* zoom Level 11 */
 #contours200[zoom = 11] {
   line-color: lighten(@contour, @contours-medium-lighten);
-  line-width: @contours-line-width * @contours-medium-multiplier;
+  line-width: @contours-line-width * @contours-minor-multiplier;
   line-opacity: 0.9;
 }
 #contours100[zoom = 11] {
-  line-color: lighten(@contour, @contours-minor-lighten);
+  line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
   line-opacity: 0.7;
 }
@@ -226,11 +226,11 @@
   text-halo-fill: #ebdfdf; /* Background color */
   text-halo-radius: 3;
   [zoom = 13] {
-    text-spacing: 3000;
+    text-spacing: 2000;
     text-size: 13;
   }
   [zoom = 14] {
-    text-spacing: 2000;
+    text-spacing: 1500;
     text-size: 13;
   }
   [zoom = 15] {

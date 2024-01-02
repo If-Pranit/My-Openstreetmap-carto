@@ -7,12 +7,12 @@
 #water-areas {
   [natural = 'glacier']::natural {
     [zoom >= 5] {
-      line-width: 1.0;
+      line-width: 1.2;
       line-color: @glacier-line;
       polygon-fill: @glacier;
       [zoom >= 10] {
-        line-dasharray: 4,2;
-        line-width: 1.5;
+        line-dasharray: 4,3;
+        line-width: 1.8;
       }
     }
   }
@@ -38,15 +38,15 @@
 #water-lines-low-zoom {
   [waterway = 'river'][zoom >= 8][zoom < 12] {
     [int_intermittent = 'yes'] {
-      line-dasharray: 8,4;
+      line-dasharray: 10,5;
       line-cap: butt;
       line-join: round;
       line-clip: false;
     }
     line-color: @water-color;
-    line-width: 0.7;
-    [zoom >= 9] { line-width: 1.2; }
-    [zoom >= 10] { line-width: 1.6; }
+    line-width: 1.2;
+    [zoom >= 9] { line-width: 2.2; }
+    [zoom >= 10] { line-width: 3.0; }
   }
 }
 
@@ -57,13 +57,13 @@
     [int_tunnel = 'no'] {
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
-        line-width: 2.5;
+        line-width: 3.0;
         line-color: white;
         [waterway = 'stream'][zoom >= 15] {
-          line-width: 3.5;
+          line-width: 4.0;
         }
         [int_intermittent = 'yes'] {
-          line-dasharray: 4,3;
+          line-dasharray: 5,4;
           line-cap: butt;
           line-join: round;
           line-clip: false;
@@ -205,7 +205,7 @@
       text-placement: line;
       text-fill: @water-text;
       text-spacing: 400;
-      text-size: 10;
+      text-size: 14;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
   }
@@ -213,7 +213,7 @@
   [lock != 'yes'][int_tunnel != 'yes'] {
     [waterway = 'river'][zoom >= 13] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 13;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: @standard-halo-radius;
@@ -221,12 +221,12 @@
       text-spacing: 400;
       text-placement: line;
       text-repeat-distance: @waterway-text-repeat-distance;
-      [zoom >= 14] { text-size: 12; }
+      [zoom >= 14] { text-size: 13; }
     }
 
     [waterway = 'canal'][zoom >= 13] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 13;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: @standard-halo-radius;
@@ -237,7 +237,7 @@
 
     [waterway = 'stream'][zoom >= 15] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 14;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: @standard-halo-radius;
@@ -253,7 +253,7 @@
     [waterway = 'ditch'] {
       [zoom >= 15] {
         text-name: "[name]";
-        text-size: 10;
+        text-size: 14;
         text-face-name: @oblique-fonts;
         text-fill: @water-text;
         text-halo-radius: @standard-halo-radius;
@@ -269,7 +269,7 @@
   [natural = 'bay'][zoom >= 14],
   [natural = 'strait'][zoom >= 14] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 13;
     text-face-name: @oblique-fonts;
     text-fill: @water-text;
     text-halo-radius: @standard-halo-radius;
@@ -278,7 +278,7 @@
     text-spacing: 400;
     text-placement: line;
     [zoom >= 15] {
-      text-size: 12;
+      text-size: 14;
     }
   }
 }
@@ -293,16 +293,16 @@
     [zoom >= 5][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 14;
       text-wrap-width: 30; // 3 em
       text-line-spacing: -1.5; // -0.15 em
       [way_pixels > 12000] {
-        text-size: 12;
+        text-size: 13;
         text-wrap-width: 37; // 3.1 em
         text-line-spacing: -1.6; // -0.13 em
       }
       [way_pixels > 48000] {
-        text-size: 15;
+        text-size: 16;
         text-wrap-width: 59; // 3.9 em
         text-line-spacing: -1.5; // -0.10 em
       }
@@ -324,7 +324,7 @@
   [feature = 'natural_bay'],
   [feature = 'natural_strait'] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 13;
     text-wrap-width: 30; // 3 em
     text-line-spacing: -1.5; // -0.15 em
     text-fill: @water-text;
@@ -333,7 +333,7 @@
     text-halo-fill: @standard-halo-fill;
     text-placement: interior;
     [zoom >= 15] {
-      text-size: 12;
+      text-size: 14;
       text-wrap-width: 40; // 4 em
       text-line-spacing: -1.6; // -0.13 em
     }
