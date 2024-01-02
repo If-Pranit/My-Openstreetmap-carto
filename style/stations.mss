@@ -23,11 +23,11 @@
     marker-fill: @station-color;
     marker-clip: false;
     [station != 'subway'] {
-      marker-width: 4;
+      marker-width: 6;
     }
     [zoom >= 13][station != 'subway'],
     [zoom >= 14][station = 'subway'] {
-      marker-width: 6;
+      marker-width: 8;
     }
     [zoom >= 14][station !='subway'],
     [zoom >=15] {
@@ -38,14 +38,14 @@
       text-dy: 9;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-halo-fill: @standard-halo-fill;
-      text-wrap-width: 30; // 3 em
+      text-wrap-width: 36; // 3.6 em
       text-line-spacing: -1.5; // -0.15 em
     }
     [zoom >= 15][station != 'subway'],
     [zoom >= 16] {
-      marker-width: 9;
+      marker-width: 11;
       text-size: 11;
-      text-wrap-width: 33; // 3 em
+      text-wrap-width: 40; // 4 em
       text-line-spacing: -1.65; // -0.15 em
       text-dy: 10;
     }
@@ -55,10 +55,10 @@
     [zoom >= 13] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
-      marker-width: 4;
+      marker-width: 6;
       marker-clip: false;
       [zoom >= 15] {
-        marker-width: 6;
+        marker-width: 7;
       }
     }
     [zoom >= 15] {
@@ -78,11 +78,11 @@
     [zoom >= 13] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
-      marker-width: 4;
+      marker-width: 5;
       marker-clip: false;
     }
     [zoom >= 15] {
-      marker-width: 6;
+      marker-width: 7;
     }
     [zoom >= 14] {
       text-name: "[name]";
@@ -101,10 +101,10 @@
     [zoom >= 14] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
-      marker-width: 4;
+      marker-width: 5;
       marker-clip: false;
       [zoom >= 15] {
-        marker-width: 6;
+        marker-width: 7;
       }
     }
     [zoom >= 16] {

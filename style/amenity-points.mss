@@ -25,18 +25,18 @@
 @religious-icon: #000000;
 
 @landcover-font-size: 20;
-@landcover-wrap-width-size: 30; // 3 em
+@landcover-wrap-width-size: 36; // 3.6 em
 @landcover-line-spacing-size: -1.5; // -0.15 em
 @landcover-font-size-big: 24;
-@landcover-wrap-width-size-big: 36; // 3 em
+@landcover-wrap-width-size-big: 42; // 4 em
 @landcover-line-spacing-size-big: -1.8; // -0.15 em
 @landcover-font-size-bigger: 30;
-@landcover-wrap-width-size-bigger: 45; // 3 em
+@landcover-wrap-width-size-bigger: 52; // 5.2 em
 @landcover-line-spacing-size-bigger: -2.25; // -0.15 em
 @landcover-face-name: @oblique-fonts;
 
 @standard-font-size: 20;
-@standard-wrap-width: 30; // 3 em
+@standard-wrap-width: 40; // 4 em
 @standard-line-spacing-size: -1.5; // -0.15 em
 @standard-font: @book-fonts;
 
@@ -92,7 +92,7 @@
     marker-clip: false;
     marker-fill: @gastronomy-icon;
     [feature != 'amenity_food_court'][zoom = 17] {
-      marker-width: 4;
+      marker-width: 6;
       marker-line-width: 0;
     }
     [feature = 'amenity_bar'][zoom >= 18] {
@@ -150,7 +150,7 @@
     [zoom >= 16][zoom < 17] {
       marker-file: url('symbols/square.svg');
       marker-fill: @transportation-icon;
-      marker-width: 6;
+      marker-width: 8;
       marker-clip: false;
     }
     [zoom >= 17] {
@@ -196,7 +196,7 @@
   [feature = 'amenity_parcel_locker'][zoom >= 17] {
     marker-fill: @amenity-brown;
     [zoom >= 17][zoom < 18] {
-      marker-width: 4;
+      marker-width: 6;
       marker-line-width: 0;
     }
     [zoom >= 18] {
@@ -297,8 +297,8 @@
         marker-fill: @water-color;
         marker-allow-overlap: true;
         marker-line-width: 0;
-        marker-width: 10;
-        marker-height: 10;
+        marker-width: 12;
+        marker-height: 12;
         marker-ignore-placement: true;
       }
     }
@@ -306,8 +306,8 @@
       [zoom = 17] {
         nozzle/marker-fill: @marina-text;
         nozzle/marker-line-width: 0;
-        nozzle/marker-width: 6;
-        nozzle/marker-height: 6;
+        nozzle/marker-width: 8;
+        nozzle/marker-height: 8;
       }
       [zoom >= 18] {
         nozzle/marker-file: url('symbols/amenity/fountain.svg');
@@ -590,7 +590,7 @@
 
   [feature = 'amenity_dentist'][zoom >= 17] {
     [zoom >= 17][zoom < 18] {
-      marker-width: 4;
+      marker-width: 6;
       marker-line-width: 0;
     }
     [zoom >= 18] {
@@ -750,9 +750,9 @@
   [feature = 'amenity_nursing_home'],
   [feature = 'amenity_childcare'] {
     [zoom >= 17] {
-      marker-width: 4;
+      marker-width: 6;
       [zoom >= 18] {
-        marker-width: 6;
+        marker-width: 8;
       }
       marker-line-width: 0;
       marker-clip: false;
@@ -761,9 +761,9 @@
   }
 
   [feature = 'amenity_driving_school'][zoom >= 17] {
-    marker-width: 4;
+    marker-width: 6;
     [zoom >= 18] {
-      marker-width: 6;
+      marker-width: 8;
     }
     marker-line-width: 0;
     marker-clip: false;
@@ -872,12 +872,12 @@
     }
 
     [zoom >= 17][zoom < 18][shop != 'supermarket'][shop != 'department_store'][shop != 'mall'][shop != 'massage'] {
-      marker-width: 4;
+      marker-width: 6;
       marker-line-width: 0;
     }
 
     [shop = 'other'][zoom >= 18] {
-      marker-width: 6;
+      marker-width: 8;
       marker-line-width: 0;
     }
 
@@ -1206,7 +1206,7 @@
 
   // office points
   [feature = 'office'][zoom >= 18] {
-    marker-width: 6;
+    marker-width: 8;
     marker-line-width: 0;
     marker-clip: false;
     marker-fill: @office;
@@ -1565,12 +1565,12 @@
   [feature = 'barrier_log'],
   [feature = 'barrier_turnstile'] {
     [zoom >= 17] {
-      marker-width: 3;
+      marker-width: 5;
       marker-line-width: 0;
       marker-fill: #7d7c7c;
 
       [zoom >= 18] {
-        marker-width: 4;
+        marker-width: 6;
       }
     }
   }
@@ -3096,19 +3096,23 @@
       marker-allow-overlap: true;
       marker-line-width: 0;
       marker-ignore-placement: true;
-      marker-width: 5.0;
-      marker-height: 5.0;
+      marker-width: 7.0;
+      marker-height: 7.0;
+      [zoom >= 15] {
+        marker-width: 9.0;
+        marker-height: 9.0;
+      }
       [zoom >= 17] {
-        marker-width: 10;
-        marker-height: 10;
+        marker-width: 12;
+        marker-height: 12;
       }
       [zoom >= 18] {
-        marker-width: 20;
-        marker-height: 20;
+        marker-width: 22;
+        marker-height: 22;
       }
       [zoom >= 19] {
-        marker-width: 30;
-        marker-height: 30;
+        marker-width: 33;
+        marker-height: 33;
       }
       [zoom >= 20] {
         marker-width: 60;
@@ -3122,17 +3126,17 @@
       trunk/marker-fill: #6b8d5e; // Same opacity and color as forest svg patterns
       trunk/marker-allow-overlap: true;
       trunk/marker-line-width: 0;
-      trunk/marker-width: 4;
-      trunk/marker-height: 4;
+      trunk/marker-width: 6;
+      trunk/marker-height: 6;
       trunk/marker-ignore-placement: true;
     }
     [zoom >= 19] {
-      trunk/marker-width: 6;
-      trunk/marker-height: 6;
+      trunk/marker-width: 8;
+      trunk/marker-height: 8;
     }
     [zoom >= 20] {
-      trunk/marker-width: 12;
-      trunk/marker-height: 12;
+      trunk/marker-width: 14;
+      trunk/marker-height: 14;
     }
   }
 }

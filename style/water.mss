@@ -294,7 +294,7 @@
     [zoom >= 17][way_pixels <= 768000] {
       text-name: "[name]";
       text-size: 10;
-      text-wrap-width: 25; // 2.5 em
+      text-wrap-width: 30; // 3 em
       text-line-spacing: -1.5; // -0.15 em
       [way_pixels > 12000] {
         text-size: 12;
@@ -325,7 +325,7 @@
   [feature = 'natural_strait'] {
     text-name: "[name]";
     text-size: 10;
-    text-wrap-width: 25; // 2.5 em
+    text-wrap-width: 30; // 3 em
     text-line-spacing: -1.5; // -0.15 em
     text-fill: @water-text;
     text-face-name: @oblique-fonts;
@@ -334,7 +334,7 @@
     text-placement: interior;
     [zoom >= 15] {
       text-size: 12;
-      text-wrap-width: 37; // 3.1 em
+      text-wrap-width: 40; // 4 em
       text-line-spacing: -1.6; // -0.13 em
     }
   }

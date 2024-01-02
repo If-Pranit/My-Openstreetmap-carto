@@ -25,7 +25,7 @@
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-size: 20;
-    text-wrap-width: 40; // 4.0 em
+    text-wrap-width: 45; // 4.5 em
     text-line-spacing: -1.5; // -0.15 em
     text-margin: 3; // 0.3 em
     [zoom >= 18] {
@@ -51,7 +51,7 @@
     }
     [zoom >= 20] {
         text-size: 22;
-        text-wrap-width: 22; // 2.0 em
+        text-wrap-width: 28; // 2.8 em
         text-line-spacing: -1.65; // -0.15 em
         text-margin: 3.3; // 0.3 em
     }
@@ -70,7 +70,7 @@ no official postal addresses) */
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-size: 22;
-    text-wrap-width: 22; // 2.0 em
+    text-wrap-width: 30; // 3.0 em
     text-line-spacing: -1.65; // -0.15 em
   }
 }

@@ -1,5 +1,5 @@
-@building-fill: #d9d0c9;  // Lch(84, 5, 68)
-@building-line: darken(@building-fill, 15%);  // Lch(70, 9, 66)
+@building-fill: #f4f2f2;  // Lch(84, 5, 68)
+@building-line: #fbdbc2;  // Lch(70, 9, 66)
 @building-low-zoom: darken(@building-fill, 4%);
 
 @building-major-fill: darken(@building-fill, 10%);  // Lch(75, 8, 67)
@@ -50,8 +50,8 @@
     marker-allow-overlap: true;
     marker-ignore-placement: true;
     marker-file: url('symbols/rect.svg');
-    marker-width: 10.0;
-    marker-height: 10.0;
+    marker-width: 12.0;
+    marker-height: 12.0;
     marker-opacity: 0.0;
     ["entrance" = "main"] {
       marker-opacity: 1.0;
@@ -65,8 +65,8 @@
     ["entrance" = "service"],
     ["entrance" = "staircase"] {
       marker-opacity: 1.0;
-      marker-width: 12.0;
-      marker-height: 12.0;
+      marker-width: 14.0;
+      marker-height: 14.0;
       ["entrance" = "service"] {
         marker-file: url('symbols/corners.svg');
       }

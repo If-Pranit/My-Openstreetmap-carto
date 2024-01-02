@@ -36,19 +36,19 @@
   [power = 'tower'] {
     [zoom >= 14] {
       marker-file: url('symbols/man_made/power_tower_small.svg');
-      marker-width: 3;
+      marker-width: 4;
     }
     [zoom >= 15] {
       marker-file: url('symbols/man_made/power_tower.svg');
-      marker-width: 5;
+      marker-width: 6;
     }
     [zoom >= 17] {
-      marker-width: 7;
+      marker-width: 8;
     }
   }
   [power = 'pole'][zoom >= 16] {
     marker-file: url('symbols/square.svg');
     marker-fill: #928f8f;
-    marker-width: 3;
+    marker-width: 4;
   }
 }

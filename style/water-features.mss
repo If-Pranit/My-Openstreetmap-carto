@@ -24,8 +24,8 @@
       marker-fill: @dam;
       marker-line-color: @dam-line;
       marker-line-width: 1;
-      marker-width: 8;
-      [zoom >= 18] { marker-width: 10; }
+      marker-width: 9;
+      [zoom >= 18] { marker-width: 11; }
       marker-allow-overlap: true;
       marker-ignore-placement: true;
     }
@@ -41,8 +41,8 @@
       marker-fill: @water-color;
       marker-line-color: @weir-line;
       marker-line-width: 1;
-      marker-width: 8;
-      [zoom >= 18] { marker-width: 10; }
+      marker-width: 9;
+      [zoom >= 18] { marker-width: 11; }
       marker-allow-overlap: true;
       marker-ignore-placement: true;
     }
@@ -56,8 +56,8 @@
     #water-barriers-point[zoom >= 17] {
       marker-fill: @lock-gate;
       marker-line-width: 0;
-      marker-width: 8;
-      [zoom >= 18] { marker-width: 10; }
+      marker-width: 9;
+      [zoom >= 18] { marker-width: 11; }
       marker-allow-overlap: true;
       marker-ignore-placement: true;
     }

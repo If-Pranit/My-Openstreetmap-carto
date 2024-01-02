@@ -24,7 +24,7 @@
     text-placement: line;
     text-fill: @ferry-route-text;
     text-spacing: 1000;
-    text-size: 28;
+    text-size: 30;
     text-dy: -8;
   }
 }
