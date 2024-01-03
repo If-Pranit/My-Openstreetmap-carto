@@ -13,20 +13,20 @@
 #roller-coaster, #roller-coaster-gap-fill {
   [zoom >= 15] {
     ::bridges[bridge = 'yes'][zoom >= 16] {
-      line-width: 2.5 * 1.5 + @bridge-casing-width-z16;
+      line-width: 2.5 + @bridge-casing-width-z16;
       line-color: #000;
       line-join: round;
       
       [tunnel = 'yes'] { line-color: lighten(#000, 20%); }
 
-      [zoom >= 17] { line-width: 6 * 1.5 + @bridge-casing-width-z17; }
-      [zoom >= 18] { line-width: 8 * 1.5 + 1.5 * @bridge-casing-width-z18; }
-      [zoom >= 19] { line-width: 10 * 1.5 + 2 * @bridge-casing-width-z19; }
-      [zoom >= 20] { line-width: 12 * 1.5 + 2 * @bridge-casing-width-z20; }
+      [zoom >= 17] { line-width: 4 + @bridge-casing-width-z17; }
+      [zoom >= 18] { line-width: 6 + 1.5 * @bridge-casing-width-z18; }
+      [zoom >= 19] { line-width: 8 + 2 * @bridge-casing-width-z19; }
+      [zoom >= 20] { line-width: 12 + 2 * @bridge-casing-width-z20; }
     }
 
     ::casing {
-      line-width: 1 * 2;
+      line-width: 1;
       line-color: mix(@roller-coaster-casing, @roller-coaster-fill, 50%);
       line-join: round;
 
@@ -35,26 +35,26 @@
       }
       [zoom >= 16] { 
         line-color: @roller-coaster-casing;
-        line-width: 2.5 * 1.5;
+        line-width: 2.5;
       }
-      [zoom >= 17] { line-width: 4 * 1.5; }
-      [zoom >= 18] { line-width: 6 * 1.5; }
-      [zoom >= 19] { line-width: 8 * 1.5; }
-      [zoom >= 20] { line-width: 12 * 1.5; }
+      [zoom >= 17] { line-width: 4; }
+      [zoom >= 18] { line-width: 6; }
+      [zoom >= 19] { line-width: 8; }
+      [zoom >= 20] { line-width: 12; }
     }
 
     ::fill[zoom >= 16] {
-      line-width: 1.25 * 2;
+      line-width: 1.25;
       line-color: @roller-coaster-fill;
       line-join: round;
 
       [tunnel = 'yes'] {
         line-color: lighten(@roller-coaster-fill, 5%);
       }
-      [zoom >= 17] { line-width: 2 * 1.5; }
-      [zoom >= 18] { line-width: 3 * 1.5; }
-      [zoom >= 19] { line-width: 4 * 1.5; }
-      [zoom >= 20] { line-width: 6 * 1.5; }
+      [zoom >= 17] { line-width: 2; }
+      [zoom >= 18] { line-width: 3; }
+      [zoom >= 19] { line-width: 4; }
+      [zoom >= 20] { line-width: 6; }
     }
   }
 }

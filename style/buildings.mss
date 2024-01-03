@@ -1,5 +1,5 @@
-@building-fill: #d9d0c9;  // Lch(84, 5, 68)
-@building-line: #f2a96f;  // Lch(70, 9, 66)
+@building-fill: #e0dad5;  // Lch(84, 5, 68)
+@building-line: #edb487;  // Lch(70, 9, 66)
 @building-low-zoom: darken(@building-fill, 4%);
 
 @building-major-fill: darken(@building-fill, 10%);  // Lch(75, 8, 67)
@@ -18,7 +18,7 @@
     [zoom >= 15] {
       polygon-fill: @building-fill;
       line-color: @building-line;
-      line-width: .75 * 2;
+      line-width: .75;
       line-clip: false;
     }
     [amenity = 'place_of_worship'],
@@ -50,8 +50,8 @@
     marker-allow-overlap: true;
     marker-ignore-placement: true;
     marker-file: url('symbols/rect.svg');
-    marker-width: 12.0;
-    marker-height: 12.0;
+    marker-width: 5.0;
+    marker-height: 5.0;
     marker-opacity: 0.0;
     ["entrance" = "main"] {
       marker-opacity: 1.0;
@@ -65,8 +65,8 @@
     ["entrance" = "service"],
     ["entrance" = "staircase"] {
       marker-opacity: 1.0;
-      marker-width: 14.0;
-      marker-height: 14.0;
+      marker-width: 6.0;
+      marker-height: 6.0;
       ["entrance" = "service"] {
         marker-file: url('symbols/corners.svg');
       }
@@ -81,7 +81,7 @@
     }
   }
   [zoom >= 20]["entrance" != null] {
-    marker-width: 16.0;
-    marker-height: 16.0;
+    marker-width: 8.0;
+    marker-height: 8.0;
   }
 }

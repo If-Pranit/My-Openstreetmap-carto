@@ -5,7 +5,7 @@
 #interpolation {
   [zoom >= 17] {
     line-color: @address-color;
-    line-width: 1 * 1.75;
+    line-width: 1;
     line-dasharray: 2,4;
   }
 }
@@ -24,8 +24,8 @@
     text-fill: @address-color;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-size: 10  * 2;
-    text-wrap-width: 45; // 4.5 em
+    text-size: 10;
+    text-wrap-width: 30; // 3.0 em
     text-line-spacing: -1.5; // -0.15 em
     text-margin: 3; // 0.3 em
     [zoom >= 18] {
@@ -50,8 +50,8 @@
       }
     }
     [zoom >= 20] {
-        text-size: 22;
-        text-wrap-width: 28; // 2.8 em
+        text-size: 11;
+        text-wrap-width: 22; // 2.0 em
         text-line-spacing: -1.65; // -0.15 em
         text-margin: 3.3; // 0.3 em
     }
@@ -69,8 +69,8 @@ no official postal addresses) */
     text-fill: #444;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-size: 22;
-    text-wrap-width: 30; // 3.0 em
+    text-size: 11;
+    text-wrap-width: 22; // 2.0 em
     text-line-spacing: -1.65; // -0.15 em
   }
 }

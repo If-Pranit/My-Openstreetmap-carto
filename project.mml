@@ -344,7 +344,6 @@ Layer:
         ) AS contours10
     properties:
       minzoom: 13
-      maxzoom: 13
   - id: contours50
     geometry: multilinestring
     <<: *extents
@@ -384,7 +383,6 @@ Layer:
         ) AS contours200
     properties:
       minzoom: 10
-      maxzoom: 14
   - id: water-barriers-point
     geometry: point
     <<: *extents
@@ -425,7 +423,6 @@ Layer:
          ) AS contours_text100
     properties:
       minzoom: 13
-      maxzoom: 15
   
   - id: landcover-line
     geometry: linestring

@@ -5,13 +5,13 @@
   [zoom >= 8] {
     /* background prevents problems with overlapping ferry-routes, see #457 */
     background/line-color: @water-color;
-    background/line-width: 1 * 1.75; /* Needs to be a bit wider than the route itself because of antialiasing */
+    background/line-width: 1; /* Needs to be a bit wider than the route itself because of antialiasing */
     line-color: @ferry-route;
-    line-width: 0.4 * 2;
+    line-width: 0.4;
     line-dasharray: 4,4;
     [zoom >= 11] {
-      background/line-width: 1 * 1.75;
-      line-width: 0.8 * 2;
+      background/line-width: 1;
+      line-width: 0.8;
       line-dasharray: 6,6;
     }
   }
@@ -24,7 +24,7 @@
     text-placement: line;
     text-fill: @ferry-route-text;
     text-spacing: 1000;
-    text-size: 30;
+    text-size: 10;
     text-dy: -8;
   }
 }

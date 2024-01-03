@@ -9,10 +9,10 @@
     [zoom >= 19] {
       text-name: [ref];
       text-face-name: @book-fonts;
-      text-size: 10 * 2;
+      text-size: 10;
       text-fill: @transportation-text;
       text-dy: 10;
-      text-halo-radius: @standard-halo-radius * 1.8;
+      text-halo-radius: @standard-halo-radius * 1.5;
       text-halo-fill: @standard-halo-fill;
       text-wrap-width: 0;
     }
@@ -23,29 +23,29 @@
     marker-fill: @station-color;
     marker-clip: false;
     [station != 'subway'] {
-      marker-width: 4 * 2;
+      marker-width: 4;
     }
     [zoom >= 13][station != 'subway'],
     [zoom >= 14][station = 'subway'] {
-      marker-width: 6 * 2;
+      marker-width: 6;
     }
     [zoom >= 14][station !='subway'],
     [zoom >=15] {
       text-name: "[name]";
       text-face-name: @bold-fonts;
-      text-size: 10 * 2;
+      text-size: 10;
       text-fill: @station-text;
       text-dy: 9;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-halo-fill: @standard-halo-fill;
-      text-wrap-width: 45; // 4.5 em
+      text-wrap-width: 30; // 3 em
       text-line-spacing: -1.5; // -0.15 em
     }
     [zoom >= 15][station != 'subway'],
     [zoom >= 16] {
-      marker-width: 9 * 2;
-      text-size: 11 * 2;
-      text-wrap-width: 45; // 4.5 em
+      marker-width: 9;
+      text-size: 11;
+      text-wrap-width: 33; // 3 em
       text-line-spacing: -1.65; // -0.15 em
       text-dy: 10;
     }
@@ -55,10 +55,10 @@
     [zoom >= 13] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
-      marker-width: 4 * 2;
+      marker-width: 4;
       marker-clip: false;
       [zoom >= 15] {
-        marker-width: 6 * 2;
+        marker-width: 6;
       }
     }
     [zoom >= 15] {
@@ -78,11 +78,11 @@
     [zoom >= 13] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
-      marker-width: 4 * 2;
+      marker-width: 4;
       marker-clip: false;
     }
     [zoom >= 15] {
-      marker-width: 6 * 2;
+      marker-width: 6;
     }
     [zoom >= 14] {
       text-name: "[name]";
@@ -101,10 +101,10 @@
     [zoom >= 14] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
-      marker-width: 4 * 2;
+      marker-width: 4;
       marker-clip: false;
       [zoom >= 15] {
-        marker-width: 6 * 2;
+        marker-width: 6;
       }
     }
     [zoom >= 16] {

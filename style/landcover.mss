@@ -963,7 +963,7 @@
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-fill: #999;
-    text-size: 20;
+    text-size: 10;
     text-face-name: @book-fonts;
     text-placement: line;
     text-dy: 8;
